@@ -1,0 +1,62 @@
+from typing import List, Optional
+from pydantic import BaseModel
+
+
+class ArtModel(BaseModel):
+    # Поля объекта искусства
+    objectID: int
+    isHighlight: bool
+    accessionNumber: str
+    accessionYear: str
+    isPublicDomain: bool
+    primaryImage: str
+    primaryImageSmall: str
+    additionalImages: List[str]
+    constituents: Optional[List[dict]]
+    department: str
+    objectName: str
+    title: str
+    culture: Optional[str]
+    period: Optional[str]
+    dynasty: Optional[str]
+    reign: Optional[str]
+    portfolio: Optional[str]
+    artistRole: Optional[str]
+    artistPrefix: Optional[str]
+    artistDisplayName: Optional[str]
+    artistDisplayBio: Optional[str]
+    artistSuffix: Optional[str]
+    artistAlphaSort: Optional[str]
+    artistNationality: Optional[str]
+    artistBeginDate: Optional[str]
+    artistEndDate: Optional[str]
+    artistGender: Optional[str]
+    artistWikidata_URL: Optional[str]
+    artistULAN_URL: Optional[str]
+    objectDate: Optional[str]
+    objectBeginDate: int
+    objectEndDate: int
+    medium: Optional[str]
+    dimensions: Optional[str]
+    creditLine: Optional[str]
+    geographyType: Optional[str]
+    city: Optional[str]
+    state: Optional[str]
+    county: Optional[str]
+    country: Optional[str]
+    region: Optional[str]
+    subregion: Optional[str]
+    locale: Optional[str]
+    locus: Optional[str]
+    excavation: Optional[str]
+    river: Optional[str]
+    classification: Optional[str]
+    rightsAndReproduction: Optional[str]
+    linkResource: Optional[str]
+    metadataDate: str
+    repository: Optional[str]
+    objectURL: Optional[str]
+    tags: Optional[List[dict]]
+    objectWikidata_URL: Optional[str]
+    isTimelineWork: Optional[bool]
+    GalleryNumber: Optional[str]
